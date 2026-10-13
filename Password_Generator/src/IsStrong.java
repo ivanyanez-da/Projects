@@ -1,45 +1,45 @@
 public class IsStrong extends Password {
 
-    public IsStrong(int longitud, String contraseña) {
-        super(longitud, contraseña);
+    public IsStrong(int length_password, String password) {
+        super(length_password, password);
     }
 
-    public String es_fuerte() {
-        boolean numeros = false;
-        boolean mayuscula = false;
-        boolean minuscula = false;
+    public String is_strong() {
+        boolean numbers = false;
+        boolean uppercase = false;
+        boolean lowercase = false;
 
-        for (int i = 0; i < this.contraseña.length(); i++){
-            char caracter = this.contraseña.charAt(i);
+        for (int i = 0; i < this.password.length(); i++){
+            char caracter = this.password.charAt(i);
 
             if (Character.isDigit(caracter)){
-                numeros = true;
+                numbers = true;
             }
             if (Character.isUpperCase(caracter)){
-                mayuscula = true;
+                uppercase = true;
             }
             if (Character.isLowerCase(caracter)){
-                minuscula = true;
+                lowercase = true;
             }
         }
 
 
-        String tipo_de_seguridad = "";
-        if (longitud > 8 && numeros && mayuscula){
-            tipo_de_seguridad = "La contraseña creada es muy fuerte";
+        String security_type= "";
+        if (lenght_password > 8 && numbers && uppercase){
+            security_type = "La contraseña creada es muy fuerte";
         }
-        else if (longitud > 8 && numeros){
-            tipo_de_seguridad = "La contraseña creada es fuerte";
+        else if (lenght_password > 8 && numbers){
+            security_type = "La contraseña creada es fuerte";
         }
-        else if (longitud > 8 && mayuscula){
-            tipo_de_seguridad = "La contraseña creada es fuerte";
+        else if (lenght_password > 8 && uppercase){
+            security_type = "La contraseña creada es fuerte";
         }
-        else if (longitud > 8 && minuscula){
-            tipo_de_seguridad = "La contraseña creada es débil";
+        else if (lenght_password > 8 && lowercase){
+            security_type = "La contraseña creada es débil";
         }
-        else if (longitud <= 8 && minuscula){
-            tipo_de_seguridad = "La contraseña creada es muy débil";
+        else if (lenght_password <= 8 && lowercase){
+            security_type = "La contraseña creada es muy débil";
         }
-        return tipo_de_seguridad;
+        return security_type;
     }
 }

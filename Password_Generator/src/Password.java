@@ -1,27 +1,26 @@
 public class Password {
 
-    int longitud;
-    String contraseña;
+    int lenght_password;
+    String password;
 
-    public Password(int longitud) {
-        this.longitud = longitud;
-
+    public Password(int lenght_password) {
+        this.lenght_password = lenght_password;
     }
-    public Password(int longitud,String contraseña) {
-        this.longitud = longitud;
-        this.contraseña = contraseña;
-    }
-
-    public int getLongitud() {
-        return longitud;
+    public Password(int lenght_password, String password) {
+        this.lenght_password = lenght_password;
+        this.password = password;
     }
 
-    public String getContraseña() {
-        return contraseña;
+    public int getLenght_password() {
+        return lenght_password;
     }
 
-    public void setLongitud(int longitud) {
-        this.longitud = longitud;
+    public String getPassword() {
+        return password;
+    }
+
+    public void setLenght_password(int lenght_password) {
+        this.lenght_password = lenght_password;
     }
 
 }
