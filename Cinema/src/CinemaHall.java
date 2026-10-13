@@ -1,15 +1,15 @@
 public class CinemaHall {
-    String[][] asiento;
+    String[][] seat;
 
     public CinemaHall() {
-        asiento = new String[8][10];
+        seat = new String[8][10];
     }
 
-    public String[][] getAsiento() {
-        return asiento;
+    public String[][] getSeat() {
+        return seat;
     }
 
-    public void setAsientos(String[][] asiento) {
-        this.asiento = asiento;
+    public void setSeat(String[][] seat) {
+        this.seat = seat;
     }
 }

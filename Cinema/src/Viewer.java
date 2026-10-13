@@ -1,37 +1,36 @@
 public class Viewer {
 
-    String nombre;
-    int edad;
-    double dinero;
+    String name;
+    int age;
+    double money;
 
     public Viewer() {
-        this.nombre = nombre;
-        this.edad = edad;
-        this.dinero = dinero;
-
+        this.name = name;
+        this.age = age;
+        this.money = money;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public int getEdad() {
-        return edad;
+    public int getAge() {
+        return age;
     }
 
-    public void setEdad(int edad) {
-        this.edad = edad;
+    public void setAge(int age) {
+        this.age = age;
     }
 
-    public double getDinero() {
-        return dinero;
+    public double getMoney() {
+        return money;
     }
 
-    public void setDinero(double dinero) {
-        this.dinero = dinero;
+    public void setMoney(double money) {
+        this.money = money;
     }
 }

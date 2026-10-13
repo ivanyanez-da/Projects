@@ -1,61 +1,61 @@
 public class Movie {
-    String titulo;
-    int  duracion_pelicula;
-    int  edad_minima;
+    String title;
+    int  duration;
+    int  minimum_age;
     String director;
-    double precio;
+    double price;
 
-    public Movie(String titulo, int duracion_pelicula, int edad_minima, String director, double precio) {
-        this.titulo = titulo;
-        this.duracion_pelicula = duracion_pelicula;
-        this.edad_minima = edad_minima;
+    public Movie(String title, int duration, int minimum_age, String director, double price) {
+        this.title = title;
+        this.duration = duration;
+        this.minimum_age = minimum_age;
         this.director = director;
-        this.precio = precio;
+        this.price = price;
     }
-    public String getTitulo() {
-        return titulo;
+    public String getTitle() {
+        return title;
     }
 
-    public void setTitulo(String titulo) {
-        this.titulo = titulo;
+    public void setTitle(String title) {
+        this.title = title;
     }
     public String getMovie() {
-        return titulo;
+        return title;
     }
 
-    public void setMovie(String titulo) {
-        this.titulo = titulo;
+    public void setMovie(String title) {
+        this.title = title;
     }
 
-    public int getDuracion_pelicula() {
-        return duracion_pelicula;
+    public int getDuration() {
+        return duration;
     }
 
-    public void setDuracion_peliculas(int duracion_pelicula) {
-        this.duracion_pelicula = duracion_pelicula;
+    public void setDuration(int duration) {
+        this.duration = duration;
     }
 
-    public int getEdad_minima() {
-        return edad_minima;
+    public int getMinimum_age() {
+        return minimum_age;
     }
 
-    public void setEdad_minima(int edad_minima) {
-        this.edad_minima = edad_minima;
+    public void setMinimum_age(int minimum_age) {
+        this.minimum_age = minimum_age;
     }
 
     public String getDirector() {
-        return director;
+            return director;
     }
 
     public void setDirector(String director) {
         this.director = director;
     }
 
-    public double getPrecio() {
-        return precio;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrice(double price) {
+        this.price = price;
     }
 }
